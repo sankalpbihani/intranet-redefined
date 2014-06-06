@@ -1,0 +1,109 @@
+<!doctype html >
+<html>
+<head>
+<title>test</title>
+<script type="text/javascript">
+
+
+<?php
+//***************************************
+// This is downloaded from www.plus2net.com //
+/// You can distribute this code with the link to www.plus2net.com ///
+//  Please don't  remove the link to www.plus2net.com ///
+// This is for your learning only not for commercial use. ///////
+//The author is not responsible for any type of loss or problem or damage on using this script.//
+/// You can use it at your own risk. /////
+/// Read the Disclaimer provided at www.plus2net.com 
+
+//*****************************************
+
+require "connect.inc.php"; // database connection details 
+echo "
+
+function fillCategory(){ 
+ // this function is used to fill the category list on load
+
+";
+
+$q1=mysql_query("SELECT Batch from electives_list");
+echo mysql_error();
+while($nt1=mysql_fetch_array($q1)){
+echo "addOption(document.drop_list.Category, '$nt1[Batch]', '$nt1[Batch]');";
+}// end of while
+?>
+} // end of JS function
+
+function SelectSubCat(){
+// ON or after selection of category this function will work
+
+removeAllOptions(document.drop_list.SubCat);
+addOption(document.drop_list.SubCat, "", "SubCat", "");
+
+// Collect all element of subcategory for various cat_id 
+
+<?php
+// let us collect all cat_id and then collect all subcategory for each cat_id
+$q2=mysql_query("SELECT DISTINCT Batch  from electives_list");
+// In the above query you can collect cat_id from category table also. 
+while($nt2=mysql_fetch_array($q2)){
+//echo "$nt2[cat_id]";
+echo "if(document.drop_list.Category.value == '$nt2[Batch]'){";
+$q3=mysql_query("SELECT Electives from electives_list where Batch='$nt2[Batch]'");
+while($nt3=mysql_fetch_array($q3)){
+echo "addOption(document.drop_list.SubCat,'$nt3[Electives]', '$nt3[Electives]');";
+
+
+} // end of while loop
+echo "}"; // end of JS if condition
+
+}
+?>
+
+
+
+
+}
+////////////////// 
+
+function removeAllOptions(selectbox)
+{
+	var i;
+	for(i=selectbox.options.length-1;i>=0;i--)
+	{
+		//selectbox.options.remove(i);
+		selectbox.remove(i);
+	}
+}
+
+
+function addOption(selectbox, value, text )
+{
+	var optn = document.createElement("OPTION");
+	optn.text = text;
+	optn.value = value;
+
+	selectbox.options.add(optn);
+}
+
+
+
+
+</script>
+</head>
+
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000" onload="fillCategory();">
+
+<FORM name="drop_list" action="yourpage.php" method="POST" >
+		
+<SELECT  NAME="Category" onChange="SelectSubCat();" >
+<Option value="">Category</option>
+</SELECT>&nbsp;
+<SELECT id="SubCat" NAME="SubCat">
+<Option value="">SubCat</option>
+
+</SELECT>
+</form>
+
+</body>
+
+</html>

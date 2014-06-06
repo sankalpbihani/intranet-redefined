@@ -1,0 +1,12 @@
+04-07-14 09:12:17	::1	ERROR	shared	ZohoEditor	init	Warning, OpenSSL is active but could not correctly generate a key for Zoho Editor. Please make sure the openssl.cnf file is correctly set up.
+04-07-14 09:15:53	::1	ERROR	shared	ZohoEditor	init	Warning, OpenSSL is active but could not correctly generate a key for Zoho Editor. Please make sure the openssl.cnf file is correctly set up.
+04-07-14 09:16:08	::1	ERROR	shared	ZohoEditor	init	Warning, OpenSSL is active but could not correctly generate a key for Zoho Editor. Please make sure the openssl.cnf file is correctly set up.
+04-07-14 09:16:12	::1	ERROR	shared	ZohoEditor	init	Warning, OpenSSL is active but could not correctly generate a key for Zoho Editor. Please make sure the openssl.cnf file is correctly set up.
+04-07-14 09:16:12	::1	ERROR	shared	ZohoEditor	init	Warning, OpenSSL is active but could not correctly generate a key for Zoho Editor. Please make sure the openssl.cnf file is correctly set up.
+04-07-14 09:18:14	::1	ERROR	shared	ZohoEditor	init	Warning, OpenSSL is active but could not correctly generate a key for Zoho Editor. Please make sure the openssl.cnf file is correctly set up.
+04-07-14 09:18:14	::1	ERROR	shared	dibi.compact.php	error l.846	message=Access denied for user 'kunal15595'@'localhost' (using password: NO)
+04-07-14 09:18:25	::1	ERROR	shared	ZohoEditor	init	Warning, OpenSSL is active but could not correctly generate a key for Zoho Editor. Please make sure the openssl.cnf file is correctly set up.
+04-07-14 09:19:59	::1	ERROR	shared	ZohoEditor	init	Warning, OpenSSL is active but could not correctly generate a key for Zoho Editor. Please make sure the openssl.cnf file is correctly set up.
+04-07-14 09:20:09	::1	INFO	shared	AuthService	Create User	user_id=admin
+04-07-14 09:20:10	::1	INFO	shared	AuthService	Create User	user_id=student
+04-07-14 09:20:11	::1	INFO	shared	AuthService	Create User	user_id=teacher

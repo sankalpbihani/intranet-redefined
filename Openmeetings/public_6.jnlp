@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+Copyright 1999-2004 The Apache Software Foundation
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<jnlp spec='1.0+' codebase='http://localhost:5080/openmeetings/screensharing'> 
+	<information> 
+		<title>Screen Sharing Application</title> 
+		<vendor>OpenMeetings</vendor> 
+		<homepage>http://openmeetings.apache.org/</homepage>
+		<icon href="icon.jpg" />
+		<icon kind="splash" href="splashicon.jpg" />
+		<description>ScreenViewer Client Application</description> 
+		<description kind="short">A File to grab a screen and send it to a Server</description> 
+		<offline-allowed/> 
+	</information>
+	<security>
+	    <all-permissions/>
+	</security>	
+	<resources> 
+		<j2se version='1.5+'/>
+		<jar href="bcprov-jdk16-1.45.jar"/>
+		<jar href="commons-beanutils-1.8.3.jar"/>
+		<jar href="commons-codec-1.6.jar"/>
+		<jar href="commons-collections-3.2.1.jar"/>
+		<jar href="ehcache-core-2.5.0.jar"/>
+		<jar href="httpclient-4.2.jar"/>
+		<jar href="httpcore-4.2.1.jar"/>
+		<jar href="jcl-over-slf4j-1.6.4.jar"/>
+		<jar href="logback-classic-1.0.3.jar"/>
+		<jar href="logback-core-1.0.3.jar"/>
+		<jar href="mina-core-2.0.4.jar"/>
+		<jar href="openmeetings-screenshare-3.0.0-RELEASE.jar"/>
+		<jar href="red5-client.jar"/>
+		<jar href="red5.jar"/>
+		<jar href="slf4j-api-1.6.4.jar"/>
+		<jar href="spring-beans-3.1.1.RELEASE.jar"/>
+		<jar href="spring-context-3.1.1.RELEASE.jar"/>
+		<jar href="spring-core-3.1.1.RELEASE.jar"/>
+
+    </resources> 
+    <application-desc main-class='org.apache.openmeetings.screen.webstart.RTMPScreenShare'>
+    	<argument>localhost</argument> 
+    	<argument>openmeetings/6</argument> 
+    	<argument>1935</argument> 
+    	<argument>fcf3bf0adc1f42b557c47caed211bdd2</argument>   
+    	<argument>Desktop sharer;Click Start to publish your screen;Start sharing;Pause sharing;Select your screen area:;Change width;Change height;X-Offset;Y-Offset;Width:;Height:;Connection was closed by server;Show mouse position to viewers;Recording;You may record and share your screen at the same time. To enable others to see your screen just hit the start button on the top.;Start recording;Stop recording;Close;Quality of the screen share:;Very high quality;High quality;Medium quality;Low quality;Publish;Start Publish;Stop Publish;Host;Publish App;Publish Id;Reduce the width of the SharingScreen before you try to move it left;Reduce the height of the SharingScreen before you try to move it bottom;Reduce the x of the SharingScreen before you try to make it wider;Reduce the y of the SharingScreen before you try to make it higher;Fill these settings stream your screen data to 3th party providers like justin.tv;Please start Screen sharing to be able to publish it;Moderator permission required to start recording;Notify on disconnect</argument> 
+    	<argument>1</argument> 
+    	<argument>1</argument>
+    	<argument>1</argument>   
+    	<argument>true</argument>
+    	<argument>true</argument>
+
+    </application-desc> 
+</jnlp> 

@@ -1,0 +1,37 @@
+<dashboard>
+  <id>default</id>
+  <title>Default</title>
+  <columnCount>2</columnCount>
+  <widgets>
+    <org.apache.openmeetings.web.user.dashboard.WelcomeWidget>
+      <id>2ea488d2-7d2a-4277-82b1-87dda0e97871</id>
+      <title>Welcome</title>
+      <collapsed>true</collapsed>
+      <settings/>
+      <location>
+        <column>0</column>
+        <row>0</row>
+      </location>
+    </org.apache.openmeetings.web.user.dashboard.WelcomeWidget>
+    <org.apache.openmeetings.web.user.dashboard.StartWidget>
+      <id>5a123c2b-9700-4944-a933-899dc4525f90</id>
+      <title>How to conference</title>
+      <collapsed>true</collapsed>
+      <settings/>
+      <location>
+        <column>1</column>
+        <row>0</row>
+      </location>
+    </org.apache.openmeetings.web.user.dashboard.StartWidget>
+    <org.apache.openmeetings.web.user.dashboard.RssWidget>
+      <id>4e39fb27-ce84-48e5-9d01-f82fccc4cebd</id>
+      <title>News</title>
+      <collapsed>false</collapsed>
+      <settings/>
+      <location>
+        <column>1</column>
+        <row>1</row>
+      </location>
+    </org.apache.openmeetings.web.user.dashboard.RssWidget>
+  </widgets>
+</dashboard>

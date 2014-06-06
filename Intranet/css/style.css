@@ -1,0 +1,95 @@
+/*!
+ *  Wood Cabin login mock up
+ *  Provided by Lewishealey.co.uk
+ *  Free to use personally and commercially
+ */
+ 
+/* Container elements for vertical align */
+* { margin: 0; padding: 0; }
+#page{display:table; margin:0px auto;}
+*:first-child+html #page {position:relative;}/*ie7*/
+* html #page{position:relative;}/*ie6*/
+
+#content_container{display:table-cell;vertical-align: top;}
+*:first-child+html #content_container{position:absolute;top:50%;}/*ie7*/
+* html #content_container{position:absolute;top:50%;}/*ie6*/
+
+*:first-child+html #content{position:relative;top:-50%;}/*ie7*/
+* html #content{position:relative;top:-50%;}/*ie6*/
+
+html,body {
+	height:100%; }
+
+body { 
+	/*background: #3E454C url(../img/background.jpg);*/
+	color: #f2f2f2;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/* Container and div information */
+#content { 
+	max-height: 300px; 
+right: 0px;}
+ 
+#page { 
+	position: absolute;
+	height:30%; 
+	width:400px; 
+	margin-right: 10px;	
+
+	/*border: 2px solid blue; */
+	right: 0px;
+} 
+ 
+#login-box { 
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	/*padding: 10px 30px 30px 30px; */
+	color: #333; 
+	
+}
+#logout {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-family: cursive;
+	/*margin-right: 0px;*/
+	margin-top: 50px;
+}
+#top-box {
+	padding: 10px 10px 10px 30px;
+	font-size: 23px;
+	font-weight: 300;
+	letter-spacing: 0.8em;
+	text-align: center;
+	color: #fff; }
+ 
+/* A few boostrap overrides */
+.btn, input.btn[type="submit"] { 
+ 	height: 20px; }
+ 
+input { 
+	border: none; }
+	
+.input-prepend { 
+	position: relative; 
+}
+
+/* Prepend trianglw */
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #60c060;
+	position: absolute;
+	left: 35px;
+	top:13px;
+	z-index:9998; }
+
+.hasPlaceholder {
+	color: #777;
+}

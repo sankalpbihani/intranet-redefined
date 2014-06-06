@@ -1,0 +1,118 @@
+#label{
+    position: absolute;
+    top: 450px;
+    right: 100px;
+}
+#navigate{
+    font-family: cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 6em;
+}
+
+#a:hover,
+#b:hover,
+#c:hover,
+#d:hover,
+#e:hover,
+#f:hover {
+    cursor:pointer;
+    background-color:#333;
+}
+
+#circles{
+   /*top: 50px;*/
+   /*opacity: 0.7;*/
+   -webkit-transform-origin: 50% 50%;
+   -moz-transform-origin: 50% 50%;
+   transform-origin: 50% 50%;
+   /*border: 2px solid green;*/
+   position: absolute;
+   height: 750px;
+   width: 750px;
+   margin-top: -100px;
+
+}
+#home:hover,
+#book:hover,
+#mail:hover,
+#folder:hover,
+#group:hover,
+#gear:hover {
+    cursor:pointer;
+    opacity: 1;
+}
+.color{
+    color: white;
+}
+.trans {
+    /*opacity: 0.1;*/
+}
+.trans:hover {
+    /*opacity: 0.9;*/
+}
+
+input{
+   border: none;
+}
+.input-group{
+    margin: 2px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    max-width: 200px;
+}
+.input-group-addon{
+    background-color: #aaa;
+}
+#login_panel {
+    border-radius: 5px;
+}
+.fa-circle {
+    /*opacity: 0.9;*/
+}
+#home {
+    position: absolute;
+    
+    color: green;
+    top:387px;
+    left:250px; 
+    /*border: 2px solid blue;*/
+}
+a{
+    color: inherit;
+    opacity: 0.9;
+}
+#book {
+    position:absolute;
+    color: brown;
+    top:300px;
+    left:200px;
+}
+
+#mail {
+    position:absolute;
+    color: red;
+    top:213px;
+    left:250px;
+}
+
+#folder {
+    position:absolute;
+    color: teal;
+    top:213px;
+    left:350px;
+}
+
+#group {
+    position:absolute;
+    color: orange;
+    top:300px;
+    left:400px;
+}
+
+#gear {
+    position:absolute;
+    color: purple;
+    top:387px;
+    left:350px;
+}

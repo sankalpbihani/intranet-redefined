@@ -1,0 +1,20 @@
+<input id="button" type="button" value="Show more" onclick="showMore()">
+<div id="d3">
+    <input type="button" value="Show less" onclick="showLess()">
+    <input type="button" value="Show less" onclick="showLess()">
+    <input type="button" value="Show less" onclick="showLess()">
+</div>
+<script type="text/javascript">
+var button = document.getElementById("button");
+var d3 = document.getElementById("d3");
+
+function showMore() {
+    button.style.display="none";
+    d3.style.display="block";
+}
+
+function showLess() {
+    button.style.display="inline-block";
+    d3.style.display="none";
+}
+</script>

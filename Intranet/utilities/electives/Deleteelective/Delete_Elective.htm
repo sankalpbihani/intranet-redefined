@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Electives</title>
+</head>
+<body>
+ <form action='' method='POST'>
+   
+           <input type='submit' name='viewall' id='viewall' value="View all Electives" />
+ </form>
+
+<?php
+echo "aksha";
+echo $_POST['viewall'];
+if(isset($_POST['viewall']))
+	{$query_view_all="SELECT  `Batch`, `Electives`, `Elective_code` FROM `electives_list` WHERE 1"
+echo $query_view_all;
+if($query_viewall=mysql_query($query_view_all))
+	echo "success";
+}
+?>
+
+</body>
+</html>

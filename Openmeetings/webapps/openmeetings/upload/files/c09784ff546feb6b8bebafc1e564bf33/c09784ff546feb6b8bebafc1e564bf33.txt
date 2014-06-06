@@ -1,0 +1,58 @@
+Implementation:
+Languages -> 
+	Backend in PHP
+	Front-end in HTML,CSS,Javascript/Jquery/AJAX, JAVA(for Android)
+	Database Management with Mysql
+
+Platform -> 
+	All modern browsers (Firefox, Chrome, IE, Safari, Opera)
+	Android
+
+
+Salient Features :
+
+1.  Administrative management
+Registration for courses
+Mess Management
+Form attestation
+Hospital schedule
+Activities going on
+Admin dues
+Guesthouse
+SAC
+
+2. Academic management 
+Course-wise calendar
+Online Secure Quizzes
+Evaluate Submission and Updating result 
+Class Analytics
+Electives en-list
+Live Extra Class
+Lecture Repository
+Plagiarism Checker
+Course Wise Pages
+
+3.  Communication
+Hierarchical Communication
+Discussion Forum and Notice Board
+Hierarchical access levels Administrators Instructor Students	
+chatting and social networking features
+Discussion/Doubt Session with Ta's And Instructor
+Scheduling Appointment
+
+4. Integration intranet 
+Webmail Notification
+Monitoring Webpages
+Repository
+Utilities and forms
+Building Time Table
+
+5. Restrictions and ease of access
+Restricted Access to Web-site
+Restriction on word limit and frequency of posts by students
+Spam Filters and Detection.
+
+6. User Facilities
+Personalized Workspace
+Basic File Storage and Transfer
+Travel Management

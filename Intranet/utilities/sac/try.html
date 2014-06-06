@@ -1,0 +1,31 @@
+
+<html><head>
+
+
+<body>
+<form name="myform"><div align="center">
+<select name="optone" size="1"
+onchange="setOptions(document.myform.optone.options
+continued from previous line[document.myform.optone.selectedIndex].value,
+continued from previous linedocument.myform.opttwo);">
+<option value=" " selected="selected"> </option>
+<option value="1">First Choice</option>
+<option value="2">Second Choice</option>
+<option value="3">Third Choice</option>
+</select><br> <br>
+<select name="opttwo" size="1"
+onchange="setOptions(document.myform.opttwo.options
+continued from previous line[document.myform.opttwo.selectedIndex].value,
+continued from previous linedocument.myform.optthree);">
+<option value=" " selected="selected">Please select one of the options above first</option>
+</select><br> <br>
+<select name="optthree" size="1">
+<option value=" " selected="selected">Please select one of the options above first</option>
+</select>
+<input type="button" name="go" value="Value Selected"
+onclick="alert(document.myform.optthree.options
+continued from previous line[document.myform.opttwo.selectedIndex].value);">
+</div></form>	
+	
+</body>
+

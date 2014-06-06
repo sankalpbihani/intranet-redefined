@@ -1,0 +1,45 @@
+/* Validation styles */
+*:focus {outline: none;}
+
+.form_hint, .required_notification {font-size: 11px; line-height: 16px;}
+
+	/* form element visual styles */
+	.contact_form input, .contact_form textarea { 
+	padding-right:30px;
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s;
+	transition: padding .25s; }
+	
+.contact_form input:focus, .contact_form textarea:focus {
+	background: #eee; 
+	padding-right:40px; }
+
+/* Form hints */
+.form_hint {
+	background: #287D7D;
+	color: white;
+	margin-left:8px;
+	padding: 9px 8px;
+	z-index: 999; /* hints stay above all other elements */
+	position: absolute; /* allows proper formatting if hint is two lines */
+	display: none;
+	
+}
+.form_hint::before {
+	content: "\25C0";
+	color:#287D7D;
+	position: absolute;
+	top:10px;
+	left:-6px;
+}
+
+.contact_form input:focus + .form_hint {
+	display: inline; }
+	
+.contact_form input:required:valid + .form_hint {
+	background: #28921f; }
+	
+.contact_form input:required:valid + .form_hint::before {
+	color:#28921f; }
+	
